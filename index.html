@@ -24,7 +24,122 @@
     ></script>
   </head>
   <body>
-    <div class="container"></div>
+    <div class="container">
+      <div class="weather-app">
+        <form class="search-form" id="search-form">
+          <div class="row">
+            <div class="col-6">
+              <input
+                type="search"
+                placeholder="Type a city.."
+                autofocus="on"
+                autocomplete="off"
+                id="city-input"
+                class="form-control"
+              />
+            </div>
+            <div class="col-3">
+              <input
+                type="submit"
+                value="Search"
+                class="form-control btn btn-dark shadow-sm w-100"
+              />
+            </div>
+            <div class="col-3">
+              <button
+                class="btn btn-secondary w-100"
+                id="current-location-button"
+              >
+                Current location
+              </button>
+            </div>
+          </div>
+        </form>
+
+        <h1 id="city">London</h1>
+        <h2 id="date">13/12/21</h2>
+        <h3 id="time">12:00</h3>
+
+        <div class="current-weather">
+          <div class="weather-icon-current" id="weather-icon-current">
+            <i class="fas fa-cloud-moon"></i>
+          </div>
+          <div class="float-left">
+            <span class="temperature" id="temperature">10</span>
+            <span class="units">
+              <a href="#" id="celsius-link">°C</a> |
+              <a href="#" id="fahrenheit-link">°F</a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h4>Next 5 days</h4>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="card" id="d1">
+            <div class="card-body">
+              <h5 class="date">
+                Mon <br />
+                22
+              </h5>
+              <h6 class="temperature mb-2 text-muted">10°/2°</h6>
+              <p class="weather-icon"><i class="fas fa-cloud-sun"></i></p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" id="d2">
+            <div class="card-body">
+              <h5 class="date">
+                Tue <br />
+                23
+              </h5>
+              <h6 class="temperature mb-2 text-muted">9°/3°</h6>
+              <p class="weather-icon"><i class="fas fa-cloud-sun"></i></p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" id="d3">
+            <div class="card-body">
+              <h5 class="date">
+                Wed <br />
+                24
+              </h5>
+              <h6 class="temperature mb-2 text-muted">7°/3°</h6>
+              <p class="weather-icon"><i class="fas fa-cloud-sun"></i></p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" id="d4">
+            <div class="card-body">
+              <h5 class="date">
+                Thu <br />
+                25
+              </h5>
+              <h6 class="temperature mb-2 text-muted">7°/0°</h6>
+              <p class="weather-icon"><i class="fas fa-cloud-sun"></i></p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" id="d5">
+            <div class="card-body">
+              <h5 class="date">
+                Fri <br />
+                26
+              </h5>
+              <h6 class="temperature mb-2 text-muted">6°/3°</h6>
+              <p class="weather-icon"><i class="fas fa-cloud-rain"></i></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="src/script.js"></script>
   </body>
 </html>
