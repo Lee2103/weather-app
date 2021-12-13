@@ -1,0 +1,40 @@
+.weather-app {
+  display: block;
+  margin: 0 auto;
+  top: 10px;
+  font-family: "Roboto Condensed", sans-serif;
+  max-width: 600;
+}
+h1,
+h2,
+h3 {
+  display: block;
+  text-align: center;
+  font-family: "Chakra Petch", sans-serif;
+}
+.current-weather {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+.weather-icon-current {
+  font-size: 70px;
+}
+#temperature {
+  font-size: 70px;
+}
+.units {
+  font-size: 34px;
+  text-decoration: none;
+}
+.units:hover {
+  color: black;
+}
+.card {
+  font-size: 24px;
+  text-align: center;
+}
+h4 {
+  text-align: center;
+  font-family: "Chakra Petch", sans-serif;
+}
