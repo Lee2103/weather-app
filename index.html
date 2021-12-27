@@ -44,15 +44,8 @@
                 type="submit"
                 value="Search"
                 class="form-control btn btn-dark shadow-sm w-100"
+                id="submit-button"
               />
-            </div>
-            <div class="col-3">
-              <button
-                class="btn btn-secondary w-100"
-                id="current-location-button"
-              >
-                Current location
-              </button>
             </div>
           </div>
         </form>
@@ -61,21 +54,31 @@
         <h2 id="date">13/12/21</h2>
         <h3 id="time">12:00</h3>
 
-        <div class="current-weather">
-          <div class="weather-icon-current" id="weather-icon-current">
-            <i class="fas fa-cloud-moon"></i>
+        <div class="row">
+          <div class="col-6">
+            <div class="clearfix weather-temperature">
+              <img src="" alt="Clear" id="icon" class="float-left" />
+              <br />
+              <div class="weather-condition" id="weather-condition"></div>
+              <div class="float-left">
+                <strong id="temperature"></strong
+                ><span class="units"
+                  ><a href="#" id="celsius-link" class="active">°C</a> |
+                  <a href="#" id="fahrenheit-link">°F</a></span
+                >
+              </div>
+            </div>
           </div>
-          <div class="float-left">
-            <span class="temperature" id="temperature">10</span>
-            <span class="units">
-              <a href="#" id="celsius-link">°C</a> |
-              <a href="#" id="fahrenheit-link">°F</a>
-            </span>
+          <div class="col-6">
+            <ul class="weather-attributes">
+              <li>Humidity: <span id="humidity"></span>%</li>
+              <li>Wind: <span id="wind-speed"></span> m/h</li>
+            </ul>
           </div>
         </div>
       </div>
     </div>
-
+    <div class="weather-forecast" id="forecast"></div>
     <h4>Next 5 days</h4>
     <div class="container">
       <div class="row">
