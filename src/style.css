@@ -46,33 +46,24 @@ li:first-letter {
 }
 .weather-temperature {
   text-align: center;
+  font-size: 70px;
 }
 .weather-condition::first-letter {
   text-transform: capitalize;
 }
-#temperature {
-  font-size: 70px;
-}
-.weather-temperature .units {
+.weather-temperature .unit {
   position: relative;
   font-size: 25px;
   top: -34px;
   font-family: "Roboto Condensed", sans-serif;
 }
-.weather-temperature .active {
-  cursor: default;
-  color: black;
-}
+
 .weather-attributes {
   margin-top: 60px;
   font-size: 24px;
   font-family: "Roboto Condensed", sans-serif;
 }
 
-.card {
-  font-size: 24px;
-  text-align: center;
-}
 h4 {
   text-align: center;
   font-family: "Chakra Petch", sans-serif;
