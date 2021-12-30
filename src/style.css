@@ -70,6 +70,21 @@ h4 {
   text-align: center;
   font-family: "Chakra Petch", sans-serif;
 }
+.weather-forecast {
+  margin-top: 20px;
+  text-align: center;
+}
+.weather-forecast-date {
+  font-size: 16px;
+  opacity: 0.5;
+}
+.weather-forecast-temperatures {
+  font-size: 13px;
+}
+
+.weather-forecast-temperature-min {
+  opacity: 0.5;
+}
 .git-hub-link {
   text-align: center;
   text-decoration: none;
