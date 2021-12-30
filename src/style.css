@@ -46,6 +46,8 @@ li:first-letter {
 }
 .weather-temperature {
   text-align: center;
+}
+.weather-temperature strong {
   font-size: 70px;
 }
 .weather-condition::first-letter {
