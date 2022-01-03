@@ -73,29 +73,8 @@
             </ul>
           </div>
         </div>
-        <h4>Next 5 days</h4>
-        <div class="weather-forecast" id="forecast">
-          <div class="row">
-            <div class="col-2">
-              <div class="weather-forecast-date">
-                ${formatDay(forecastDay.dt)}
-              </div>
-              <img
-                src="http://openweathermap.org/img/wn/${forecastDay.weather[0].icon}@2x.png"
-                alt=""
-                width="42px"
-              />
-              <div class="weather-forecast-temperatures">
-                <span class="weather-forecast-temperature-max">
-                  ${Math.round(forecastDay.temp.max)}°
-                </span>
-                <span class="weather-forecast-temperature-min"
-                  >${Math.round(forecastDay.temp.min)}°
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
+
+        <div class="weather-forecast" id="forecast"></div>
       </div>
     </div>
 

@@ -48,9 +48,9 @@ function formatDay(timestamp) {
   let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
   return days[day];
 }
-function displayForecast (response) {
-  let forecast= response.data.daily;
-  let forecastElement= document.querySelector("#forecast");
+function displayForecast(response) {
+  let forecast = response.data.daily;
+  let forecastElement = document.querySelector("#forecast");
   let forecastHTML = `<div class="row">`;
   forecast.forEach(function (forecastDay, index) {
     if (index < 6) {
@@ -75,9 +75,10 @@ function displayForecast (response) {
           )}° </span>
         </div>
       </div>
-    `;
+  `;
     }
   });
+
   forecastHTML = forecastHTML + `</div>`;
   forecastElement.innerHTML = forecastHTML;
 }
@@ -105,7 +106,7 @@ function displayWeather(response) {
   iconElement.setAttribute("alt", response.data.weather[0].description);
   cityElement.innerHTML=response.data.name;
   dateElement.innerHTML= formatDate(response.data.dt*1000);
-  timeElement.innerHTML= formattime(response.data.dt*1000);
+  timeElement.innerHTML= formatTime(response.data.dt*1000);
 }
 
 function search (city) {
@@ -119,11 +120,6 @@ function handleSubmit (event) {
   search(cityInputElement.value);
 }
 
-let dateElement = document.querySelector("#date");
-let timeElement = document.querySelector("#time");
-let currentTime = new Date();
-dateElement.innerHTML = formatDate(currentTime);
-timeElement.innerHTML = formatTime(currentTime);
 
 let form= document.querySelector ("#search-form");
 form.addEventListener ("submit", handleSubmit);
