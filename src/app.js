@@ -99,7 +99,7 @@ function displayWeather(response) {
   let timeElement= document.querySelector ("#time")
   celsiusTemperature = response.data.main.temp;
   temperatureElement.innerHTML= Math.round (celsiusTemperature);
-  windSpeedElement.innerHTML= Math.round(response.data.wind.speed);
+  windSpeedElement.innerHTML=response.data.wind.speed;
   humidityElement.innerHTML=response.data.main.humidity;
   weatherConditionElement.innerHTML=response.data.weather[0].description;
   iconElement.setAttribute("src", `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);

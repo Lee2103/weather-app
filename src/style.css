@@ -12,7 +12,9 @@ h3 {
   text-align: center;
   font-family: "Chakra Petch", sans-serif;
 }
-
+.search-form {
+  margin-bottom: 40px;
+}
 .current-weather {
   display: block;
   margin: 0 auto;
