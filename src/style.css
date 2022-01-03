@@ -4,6 +4,7 @@
   top: 10px;
   font-family: "Roboto Condensed", sans-serif;
   max-width: 600;
+  background-color: #aeccc6;
 }
 h1,
 h2,
@@ -14,6 +15,9 @@ h3 {
 }
 .search-form {
   margin-bottom: 40px;
+  margin-left: 60px;
+  margin-top: 40px;
+  padding-top: 40px;
 }
 .current-weather {
   display: block;
@@ -51,6 +55,7 @@ li:first-letter {
 }
 .weather-temperature strong {
   font-size: 70px;
+  margin-bottom: 40px;
 }
 .weather-condition::first-letter {
   text-transform: capitalize;
